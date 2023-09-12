@@ -55,7 +55,7 @@
     </style>
 </head>
 <body>
-    <h1 class="character-name">Выберите персонаж</h1>
+    <h1 class="character-name">Выберите персонажа</h1>
     <!-- Первая иконка персонажа -->
     <div class="character-container" onclick="selectCharacter('Марио')">
         <div class="character-icon" style="background-image: url('mario.png');"></div>
@@ -77,7 +77,6 @@
         var tg = window.Telegram.WebApp;
         var user = tg.initDataUnsafe.user.name;
         
-
         function selectCharacter(characterName) {
             selectedCharacter = characterName;
             alert("Вы выбрали персонажа: " + characterName);
